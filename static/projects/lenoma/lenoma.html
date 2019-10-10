@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lenoma.ru</title>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+
+    <nav class="header-nav-1">
+      <div class="center-wrapper-flex">
+        <div class="small-menu">
+          <span class="small-menu-title">Меню</span>
+          <ul class="small-menu-list hidden">
+            <li class="small-menu-list-item">О магазине</li>
+            <li class="small-menu-list-item">Оплата</li>
+            <li class="small-menu-list-item">Доставка</li>
+            <li class="small-menu-list-item">Отзывы</li>
+            <li class="small-menu-list-item">Новости</li>
+            <li class="small-menu-list-item">Статьи</li>
+            <li class="small-menu-list-item">Контакты</li>
+          </ul>
+        </div>
+        <ul class="header-menu-1">
+
+          <li class="header-menu-1-item">О магазине</li>
+          <li class="header-menu-1-item">Оплата</li>
+          <li class="header-menu-1-item">Доставка</li>
+          <li class="header-menu-1-item">Отзывы</li>
+          <li class="header-menu-1-item">Новости</li>
+          <li class="header-menu-1-item">Статьи</li>
+          <li class="header-menu-1-item">Контакты</li>
+        </ul>
+        <ul class="header-angle-menu">
+          <li class="header-angle-menu-item">Личный кабинет</li>
+          <li class="header-angle-menu-item">Избранное</li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="top">
+      <div class="top-logo"><img src="public/img/logo.png" alt="Our logo"></div>
+      <div class="top-info-box">
+        <input id="top-search" type="text" class="top-search-input" placeholder="поиск по каталогу товаров">
+        <div class="top-info-box-item phone">+7 /495/ 542-05-95</div>
+        <div class="top-info-box-item callback">обратный звонок</div>
+        <div class="top-info-box-item email">info@lenoma.ru</div>
+        <div class="top-info-box-item worktime">пн—пт 9.00—21.00</div>
+      </div>
+      <div class="top-cart"></div>
+    </div>
+    <nav class="shop-navi">
+
+      <div class="center-wrapper-flex">
+
+        <div class="shop-navi-items">
+          <div class="shop-navi-item">Акция</div>
+          <div class="shop-navi-item">Парфюмерия</div>
+          <div class="shop-navi-item">Новинки</div>
+          <div class="shop-navi-item">Макияж</div>
+          <div class="shop-navi-item">Уход за кожей</div>
+          <div class="shop-navi-item">Уход за волосами</div>
+          <div class="shop-navi-item">Для мужчин</div>
+          <div class="shop-navi-item">Organic</div>
+          <div class="shop-navi-item">Подарки</div>
+        </div>
+        <div class="shop-navi-sale">sale</div>
+
+      </div>
+      <div class="sale-background"></div>
+    </nav>
+  </header>
+  <section class="section-promo-1">
+    <div class="center-wrapper">
+
+
+      <h1>идеальный аромат<br>от giorgio armani</h1>
+
+      <div class="slider">
+        <div class="details">
+          <span class="text-brand">подробнее</span>
+          <div class="horiz-line"></div>
+        </div>
+        <div class="slider-picture">
+          <span class="slider-price">от 4 990 Р. —</span>
+          <div class="slider-controls">
+            <div class="slider-controls-dot" onclick="setSlide(0)"></div>
+            <div class="slider-controls-dot" onclick="setSlide(1)"></div>
+            <div class="slider-controls-dot" onclick="setSlide(2)"></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="recomendations">
+        <h3>наши рекомендации</h3>
+        <div class="horiz-line"></div>
+        <ul class="recomendations-items">
+          <li class="recomendations-item">Интересные предложения</li>
+          <li class="recomendations-item">Женская парфюмерия</li>
+          <li class="recomendations-item">Товар со скидкой</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="features">
+    <div class="features-item">оригинальная <br> продукция</div>
+    <div class="features-item">бесплатная доставка<br>по москве и россии</div>
+    <div class="features-item">система скидок</div>
+    <div class="features-item">срочная доставка</div>
+  </div>
+
+  <section class="goods hit">
+    <h2 class="hit-tite">хиты продаж</h2>
+    <div class="horiz-line"></div>
+    <div class="box">
+      <div class="box-item hot">
+        <div class="box-item-picture"><img src="public/pct/hit-1.png" alt=""></div>
+        <span class="box-item-title">Fleur Narcotique</span>
+        <span class="box-item-subtitle">EX Nihilo<br>Парфюмированная вода<br>Женская</span>
+        <span class="box-item-price price">от 4 990 Р. —</span>
+      </div>
+      <div class="box-item">
+        <div class="box-item-picture"><img src="public/pct/hit-2.png" alt=""></div>
+        <span class="box-item-title">100% Love</span>
+        <span class="box-item-subtitle">EX Nihilo<br>Парфюмированная вода<br>Женская</span>
+        <span class="box-item-price price">от 2 390 Р. —</span>
+      </div>
+      <div class="box-item">
+        <div class="box-item-picture"><img src="public/pct/hit-3.png" alt=""></div>
+        <span class="box-item-title">10 Corso Como</span>
+        <span class="box-item-subtitle">EX Nihilo<br>Парфюмированная вода<br>Женская</span>
+        <span class="box-item-price price">от 7 890Р. —</span>
+      </div>
+      <div class="box-item">
+        <div class="box-item-picture"><img src="public/pct/hit-4.png" alt=""></div>
+        <span class="box-item-title">1881 Collection</span>
+        <span class="box-item-subtitle">EX Nihilo<br>Парфюмированная вода<br>Женская</span>
+        <span class="box-item-price price">от 3 270 Р. —</span>
+      </div>
+      <div class="box-arrow box-arrow-go-next"></div>
+      <div class="box-arrow box-arrow-go-prev"></div>
+    </div>
+  </section>
+
+  <section class="goods new">
+    <h2 class="new-title">новинки</h2>
+    <div class="horiz-line"></div>
+    <div class="box">
+      <div class="box-item">
+        <div class="box-item-picture"><img src="public/pct/new-1.png" alt=""></div>
+        <span class="box-item-title">Fleur Narcotique</span>
+        <span class="box-item-subtitle">EX Nihilo<br>Парфюмированная вода<br>Женская</span>
+        <span class="box-item-price price">от 4 990 Р. —</span>
+      </div>
+      <div class="box-item">
+        <div class="box-item-picture"><img src="public/pct/new-2.png" alt=""></div>
+        <span class="box-item-title">100% Love</span>
+        <span class="box-item-subtitle">EX Nihilo<br>Парфюмированная вода<br>Женская</span>
+        <span class="box-item-price price">от 2 390 Р. —</span>
+      </div>
+      <div class="box-item">
+        <div class="box-item-picture"><img src="public/pct/new-3.png" alt=""></div>
+        <span class="box-item-title">10 Corso Como</span>
+        <span class="box-item-subtitle">EX Nihilo<br>Парфюмированная вода<br>Женская</span>
+        <span class="box-item-price price">от 7 890Р. —</span>
+      </div>
+      <div class="box-item">
+        <div class="box-item-picture"><img src="public/pct/new-4.png" alt=""></div>
+        <span class="box-item-title">1881 Collection</span>
+        <span class="box-item-subtitle">EX Nihilo<br>Парфюмированная вода<br>Женская</span>
+        <span class="box-item-price price">от 3 270 Р. —</span>
+      </div>
+      <div class="box-arrow box-arrow-go-next"></div>
+      <div class="box-arrow box-arrow-go-prev"></div>
+    </div>
+  </section>
+
+  <section class="goods special">
+    <h2 class="special-title">специальные предложения</h2>
+    <div class="horiz-line"></div>
+    <div class="box">
+      <div class="box-item">
+        <div class="box-item-picture"><img src="public/pct/special-1.png" alt=""></div>
+        <span class="box-item-title">Fleur Narcotique</span>
+        <span class="box-item-subtitle">EX Nihilo<br>Парфюмированная вода<br>Женская</span>
+        <span class="box-item-price price">от 4 990 Р. —</span>
+      </div>
+      <div class="box-item">
+        <div class="box-item-picture"><img src="public/pct/special-2.png" alt=""></div>
+        <span class="box-item-title">100% Love</span>
+        <span class="box-item-subtitle">EX Nihilo<br>Парфюмированная вода<br>Женская</span>
+        <span class="box-item-price price">от 2 390 Р. —</span>
+      </div>
+      <div class="box-item">
+        <div class="box-item-picture"><img src="public/pct/special-3.png" alt=""></div>
+        <span class="box-item-title">10 Corso Como</span>
+        <span class="box-item-subtitle">EX Nihilo<br>Парфюмированная вода<br>Женская</span>
+        <span class="box-item-price price">от 7 890Р. —</span>
+      </div>
+      <div class="box-item">
+        <div class="box-item-picture"><img src="public/pct/special-4.png" alt=""></div>
+        <span class="box-item-title">1881 Collection</span>
+        <span class="box-item-subtitle">EX Nihilo<br>Парфюмированная вода<br>Женская</span>
+        <span class="box-item-price price">от 3 270 Р. —</span>
+      </div>
+      <div class="box-arrow box-arrow-go-next"></div>
+      <div class="box-arrow box-arrow-go-prev"></div>
+    </div>
+  </section>
+
+  <section class="goods top-brands">
+    <h2 class="special-title">топ брендов</h2>
+    <div class="horiz-line"></div>
+    <span class="text-brand">все бренды</span>
+    <div class="top-brands-elite">
+      <div class="top-brands-elite-item"><img src="public/img/dg.png" alt=""></div>
+      <div class="top-brands-elite-item"><img src="public/img/ck.png" alt=""></div>
+      <div class="top-brands-elite-item"><img src="public/img/bvlg.png" alt=""></div>
+      <div class="top-brands-elite-item"><img src="public/img/cdior.png" alt=""></div>
+      <div class="top-brands-elite-item"><img src="public/img/ysl.png" alt=""></div>
+      <div class="top-brands-elite-item"><img src="public/img/burb.png" alt=""></div>
+    </div>
+    <div class="top-brands-box">
+      <ul class="top-brands-box-items">
+        <li class="top-brands-box-item">Azzaro</li>
+        <li class="top-brands-box-item">Burberry</li>
+        <li class="top-brands-box-item">Bvlgari</li>
+        <li class="top-brands-box-item">Calvin Klein</li>
+        <li class="top-brands-box-item">Carolina Herrera</li>
+        <li class="top-brands-box-item">Cartier</li>
+      </ul>
+      <ul class="top-brands-box-items">
+        <li class="top-brands-box-item">Christian Dior</li>
+        <li class="top-brands-box-item">Dana</li>
+        <li class="top-brands-box-item">Davidoff</li>
+        <li class="top-brands-box-item">Dolce &amp Gabbana</li>
+        <li class="top-brands-box-item">Elizabeth Arden</li>
+        <li class="top-brands-box-item">Estee Lauder</li>
+      </ul>
+      <ul class="top-brands-box-items">
+        <li class="top-brands-box-item">Giorgio Armani</li>
+        <li class="top-brands-box-item">Givenchy</li>
+        <li class="top-brands-box-item">Gucci</li>
+        <li class="top-brands-box-item">Guerlain</li>
+        <li class="top-brands-box-item">Hugo Boss</li>
+        <li class="top-brands-box-item">Issey Miyake</li>
+      </ul>
+      <ul class="top-brands-box-items">
+        <li class="top-brands-box-item">Ivanka Trump</li>
+        <li class="top-brands-box-item">Jean Paul Gaultier</li>
+        <li class="top-brands-box-item">Juicy Couture</li>
+        <li class="top-brands-box-item">Lancome</li>
+        <li class="top-brands-box-item">Liz Claiborne</li>
+        <li class="top-brands-box-item">Mont Blanc</li>
+      </ul>
+      <ul class="top-brands-box-items">
+        <li class="top-brands-box-item">Paco Rabanne</li>
+        <li class="top-brands-box-item">Parfums De Coeur</li>
+        <li class="top-brands-box-item">Ralph Lauren</li>
+        <li class="top-brands-box-item">Thierry Mugler</li>
+        <li class="top-brands-box-item">Versace</li>
+        <li class="top-brands-box-item">Yves Saint Laurent</li>
+      </ul>
+      <div class="box-arrow box-arrow-go-next"></div>
+      <div class="box-arrow box-arrow-go-prev"></div>
+    </div>
+
+  </section>
+
+  <section class="articles-and-news">
+    <h2>статьи и новости</h2>
+    <div class="horiz-line"></div>
+    <div class="center-wrapper-flex">
+      <div class="news">
+        <div class="news-post">
+          <span class="news-post-title">Парфюмерия в нашей жизни</span>
+          <span class="news-post-date">26 апреля 2017</span>
+          <span class="news-post-text">Как ароматы могут влиять на ваше настроение, самочувствие, деловые отношения и любовные завоевания? Все секреты магической силы различных парфюмов, вы, сможете открыть для себя, прочитав эту статью!</span>
+        </div>
+        <div class="news-post">
+          <span class="news-post-title">Топ женских ароматов - Весна 2016</span>
+          <span class="news-post-date">26 апреля 2017</span>
+          <span class="news-post-text">Как ароматы могут влиять на ваше настроение, самочувствие, деловые отношения и любовные завоевания? Все секреты магической силы различных парфюмов, вы, сможете открыть для себя, прочитав эту статью!</span>
+        </div>
+        <div class="news-post">
+          <span class="news-post-title">Победители парфюмерных премий Art and Olfaction Awards 2014 и Canadian Fragrance Awards 2014</span>
+          <span class="news-post-date">26 апреля 2017</span>
+          <span class="news-post-text">В Канаде прошло награждения победителей девятой ежегодной премии ароматов «Canadian Fragrance Awards 2014».</span>
+        </div>
+        <a href="#" class="news-all-link">смотреть все статьи</a>
+      </div>
+      <div class="articles">
+        <article class="article">
+          <span class="article-title">Geza Shoen, Mark Buxton и Bertrand Duchaufour</span>
+          <span class="article-date">26 апреля 2017</span>
+          <span class="article-text">три поистине великих парфюмера, объединили свои общие труды и выпустили коллекцию под названием Renegades.</span>
+        </article>
+        <article class="article">
+          <span class="article-title">No Ordinary Man от Korloff Paris</span>
+          <span class="article-date">26 апреля 2017</span>
+          <span class="article-text">мужской аромат выпущенный в 2016 году воплощает силу духа и отвагу</span>
+        </article>
+        <article class="article">
+          <span class="article-title">Новый аромат представляет собой</span>
+          <span class="article-date">26 апреля 2017</span>
+          <span class="article-text">Новинка 2016 года для мужчин от торгового дома Amouage - Bracken for Men. обладателя.</span>
+        </article>
+        <a href="#" class="look-all-articles">смотреть все новости</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="center-wrapper-flex">
+      <div class="about-company">
+        <span class="about-company-title footer-title">о компании</span>
+        <ul class="about-company-list">
+          <li class="about-company-item footer-text">О магазине</li>
+          <li class="about-company-item footer-text">Оплата</li>
+          <li class="about-company-item footer-text">Доставка</li>
+          <li class="about-company-item footer-text">Новости</li>
+          <li class="about-company-item footer-text">Статьи</li>
+          <li class="about-company-item footer-text">Контакты</li>
+          <li class="about-company-item footer-text">Информация о заказах</li>
+        </ul>
+      </div>
+      <div class="catalog">
+        <span class="catalog-title footer-title">каталог</span>
+        <ul class="catalog-list">
+          <li class="catalog-item footer-text">Женская парфюмерия</li>
+          <li class="catalog-item footer-text">Мужская парфюмерия</li>
+          <li class="catalog-item footer-text">Новинки</li>
+          <li class="catalog-item footer-text">Средства ухода</li>
+          <li class="catalog-item footer-text">Селективная косметика</li>
+          <li class="catalog-item footer-text">Духи для дома</li>
+          <li class="catalog-item footer-text">Винтаж</li>
+        </ul>
+      </div>
+      <div class="contacts">
+        <span class="contacts-number footer-title">+7 /495/ 542-05-9</span>
+        <span class="contacts-messangers footer-text">Мы доступны также</span>
+        <span class="contacts-working-time footer-text">В рабочее время c 9.00 до 21.00</span>
+        <span class="callback footer-text-bigger">обратный звонок</span>
+        <span class="email footer-text-bigger">info@lenoma.ru</span>
+        <span class="skype footer-text-bigger">skype: lenoma.ru</span>
+      </div>
+      <div class="subscribe">
+        <span class="subscribe-title footer-title">подписаться на новости</span>
+        <input type="email" id="email" class="subscribe-input" placeholder="введите email">
+        <span class="subscribe-confirm text-brand">подписаться</span>
+        <div class="subscribe-inst">
+          <div class="icon"><img src="public/img/inst.png" alt="IG"></div>
+          <span class="inst-link footer-text-bigger">присоединяйтесь к нам</span>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="copyright-icon">&#169; 2017. Lenoma.ru</div>
+        <div class="copyright-developed">Разработка и поддержка — «ЭВРИКА»</div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script type="text/javascript" src="script/index.js">
+  </script>
+</body>
+
+</html>

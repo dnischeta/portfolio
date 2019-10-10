@@ -4,7 +4,6 @@ const browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
 
 
-
 function style () {
   return gulp.src('./scss/**/*.scss')
   .pipe(sass())
@@ -23,8 +22,8 @@ function watch () {
   })
   gulp.watch('./scss/**/*.scss', style);
   gulp.watch('./*.html').on('change', browserSync.reload);
+  gulp.watch('./script/*.js').on('change', browserSync.reload);
 }
 
 exports.watch = watch;
-
 exports.style = style;
