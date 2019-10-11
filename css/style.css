@@ -189,7 +189,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 .projects-controls-items {
   display: flex;
@@ -230,5 +231,64 @@ header {
   .projects-gallery-item {
     width: 300px;
     height: 300px;
-    background-color: red;
-    margin-top: 20px; }
+    background-color: #bdc3c7;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px;
+    border-radius: 30px; }
+    .projects-gallery-item img {
+      width: 90%;
+      height: 60%; }
+
+.projects-popup {
+  position: absolute;
+  top: 30px;
+  background-color: #bdc3c7;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 70%;
+  transition: 0.5s;
+  border-radius: 30px; }
+  .projects-popup-close {
+    align-self: flex-end;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background: url("../static/img/close.svg");
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transition: 0.2s; }
+    .projects-popup-close:hover {
+      transform: scale(1.1); }
+  .projects-popup-title {
+    font-weight: 700;
+    font-size: 24px; }
+  .projects-popup-picture {
+    margin-top: 20px;
+    width: 65%;
+    height: 400px; }
+  .projects-popup-description {
+    margin-top: 20px;
+    width: 90%;
+    text-align: center; }
+  .projects-popup-link {
+    margin-top: 20px;
+    padding: 15px 20px;
+    background-color: white;
+    text-decoration: none;
+    color: #2c3e50;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: 0.3s; }
+    .projects-popup-link:hover {
+      transform: scale(1.05); }

@@ -219,6 +219,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
 
   &-controls {
@@ -276,11 +277,84 @@ header {
     &-item {
       width: 300px;
       height: 300px;
-      background-color: red;
+      background-color: $color-main;
       margin-top: 20px;
-      
-      
+      padding-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 18px;
+      border-radius: 30px;
 
+      img {
+        width: 90%;
+        height: 60%;
+      }
+    }
+  }
+
+  &-popup {
+    position: absolute;
+    top: 30px;
+    background-color: $color-main;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 70%;
+    transition: 0.5s;
+    border-radius: 30px;
+
+    &-close {
+      align-self: flex-end;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      border-radius: 50%;
+      background: url('../static/img/close.svg');
+      height: 30px;
+      width: 30px;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    &-title {
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    &-picture {
+      margin-top: 20px;
+      width: 65%;
+      height: 400px;
+    }
+
+    &-description {
+      margin-top: 20px;
+      width: 90%;
+      text-align: center;
+    }
+
+    &-link {
+      margin-top: 20px;
+      padding: 15px 20px;
+      background-color: white;
+      text-decoration: none;
+      color: $color-text;
+      text-transform: uppercase;
+      font-weight: 700;
+      border-radius: 50px;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }
 }
