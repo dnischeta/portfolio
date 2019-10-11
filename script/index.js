@@ -37,24 +37,24 @@ class popupInfo {
 let dataPopup = [];
 
 let lenomaPopup = new popupInfo({
-    pictureUrl: '../static/pct/lenoma-preview.png',
+    pictureUrl: 'static/pct/lenoma-preview.png',
     title: 'Главная страница интернет-магазина',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat adipisci esse ipsum odio deleniti nulla maiores deserunt ratione quis commodi reiciendis, iure, magnam quisquam dolore amet, quaerat voluptas nesciunt vero?',
-    linkUrl: '../static/projects/lenoma/lenoma.html'
+    linkUrl: 'static/projects/lenoma/lenoma.html'
 });
 
 let fusionPopup = new popupInfo({
-    pictureUrl: '../static/pct/fusion-preview.png',
+    pictureUrl: 'static/pct/fusion-preview.png',
     title: 'Портфолио компании',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat adipisci esse ipsum odio deleniti nulla maiores deserunt ratione quis commodi reiciendis, iure, magnam quisquam dolore amet, quaerat voluptas nesciunt vero?',
-    linkUrl: '../static/projects/fusion/fusion.html'
+    linkUrl: 'static/projects/fusion/fusion.html'
 });
 
 let landingPopup = new popupInfo({
-    pictureUrl: '../static/pct/landing-preview.png',
+    pictureUrl: 'static/pct/landing-preview.png',
     title: 'Лэндинг №1',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat adipisci esse ipsum odio deleniti nulla maiores deserunt ratione quis commodi reiciendis, iure, magnam quisquam dolore amet, quaerat voluptas nesciunt vero?',
-    linkUrl: '../static/projects/landing/landing.html'
+    linkUrl: 'static/projects/landing/landing.html'
 });
 
 dataPopup.push(lenomaPopup);
@@ -73,8 +73,10 @@ function closePopup (element) {
 
 function showPopup (element, dataPopup) {
     element.addEventListener('click', () => {
-        projectPopup.style.display = 'flex';
         dataPopup.fillPopup(projectPopup);
+        projectPopup.style.display = 'flex';
+        
+        
     });
 }
 

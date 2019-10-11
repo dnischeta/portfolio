@@ -74,7 +74,7 @@ header {
     grid-column-gap: 10px;
 
     &-avatar {
-      background: url('../static/pct/avatar.jpg');
+      background: url('static/pct/avatar.jpg');
       background-repeat: no-repeat;
       background-position: left -10px;
       background-size: 150%;
@@ -313,7 +313,7 @@ header {
       border: none;
       outline: none;
       border-radius: 50%;
-      background: url('../static/img/close.svg');
+      background: url('static/img/close.svg');
       height: 30px;
       width: 30px;
       cursor: pointer;
