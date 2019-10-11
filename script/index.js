@@ -67,15 +67,16 @@ let projectCard = document.querySelectorAll('.projects-gallery-item');
 
 function closePopup (element) {
     element.addEventListener('click', () => {
-        projectPopup.style.display = 'none';
+        //projectPopup.style.display = 'none';
+        projectPopup.classList.toggle('projects-popup__active');
     });
 }
 
 function showPopup (element, dataPopup) {
     element.addEventListener('click', () => {
         dataPopup.fillPopup(projectPopup);
-        projectPopup.style.display = 'flex';
-        
+       // projectPopup.style.display = 'flex';
+        projectPopup.classList.toggle('projects-popup__active');
         
     });
 }
